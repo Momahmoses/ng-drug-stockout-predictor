@@ -1,0 +1,54 @@
+model:
+  tft:
+    max_encoder_length: 24
+    max_prediction_length: 12
+    hidden_size: 64
+    attention_head_size: 4
+    dropout: 0.1
+    hidden_continuous_size: 32
+    learning_rate: 0.03
+    batch_size: 64
+    max_epochs: 50
+  xgboost:
+    n_estimators: 400
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    min_child_weight: 5
+    scale_pos_weight: 3.5
+
+alert:
+  risk_threshold: 70
+  lead_time_days: 45
+  recheck_interval_days: 7
+
+drugs:
+  priority_tier_1:
+    - ACT-AL-24       # Artemether-Lumefantrine
+    - OXY-10IU        # Oxytocin 10IU
+    - MgSO4-50PCT     # Magnesium Sulphate
+    - MISO-200MCG     # Misoprostol
+    - ARV-TDF3TC      # TDF/3TC/EFV (HIV)
+  priority_tier_2:
+    - AMOX-500MG
+    - COTRIM-480MG
+    - METRO-400MG
+    - ORS-SACHET
+    - ZINC-20MG
+  diagnostics:
+    - RDT-MALARIA
+    - RDT-HIV
+    - RDT-SYPHILIS
+
+states:
+  - Kano
+  - Lagos
+  - Oyo
+  - Rivers
+  - Kaduna
+  - Katsina
+  - Ogun
+  - Benue
+  - Plateau
+  - Niger
