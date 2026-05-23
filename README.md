@@ -1,6 +1,6 @@
-# 💊 Nigerian PHC Drug Stock-out Predictor
+# Nigerian PHC Drug Stock-out Predictor
 
-> AI-powered predictive system that forecasts essential medicine stock-out risk 45 days ahead across Nigeria's 30,000+ Primary Healthcare Centres — preventing maternal deaths from oxytocin shortages and child deaths from antimalarial stockouts.
+> AI-powered predictive system that forecasts essential medicine stock-out risk 45 days ahead across Nigeria's 30,000+ Primary Healthcare Centres, preventing maternal deaths from oxytocin shortages and child deaths from antimalarial stockouts.
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104-green.svg)](https://fastapi.tiangolo.com)
@@ -11,7 +11,7 @@
 
 ## Problem
 
-Nigeria loses patients daily — not from lack of drugs nationally, but from inability to predict local demand. WHO estimates 10% of Africa's maternal deaths are directly linked to oxytocin stockouts at the point of delivery. Artemisinin stockouts during peak malaria season kill children who arrived at a clinic that simply ran out.
+Nigeria loses patients daily, not from lack of drugs nationally, but from inability to predict local demand. WHO estimates 10% of Africa's maternal deaths are directly linked to oxytocin stockouts at the point of delivery. Artemisinin stockouts during peak malaria season kill children who arrived at a clinic that simply ran out.
 
 This is a **logistics intelligence failure**, not a supply failure. Machine learning can fix it.
 
@@ -61,12 +61,12 @@ A three-layer AI pipeline:
 ## Features
 
 - **45-day stock-out forecast** per drug per PHC using Temporal Fusion Transformer
-- **SHAP explanations** for every risk prediction — interpretable for non-technical PHC staff
+- **SHAP explanations** for every risk prediction, interpretable for non-technical PHC staff
 - **Automated SMS alerts** via Africa's Talking when risk score exceeds configurable threshold
 - **Reorder quantity recommendation** using Economic Order Quantity (EOQ) optimization
-- **Interactive national dashboard** — filter by state, LGA, drug category, risk level
+- **Interactive national dashboard**, filter by state, LGA, drug category, risk level
 - **FastAPI REST endpoint** for integration with DHIS2 and NPHCDA logistics systems
-- **Offline-capable batch scoring** — runs weekly via Airflow even without live DHIS2 connectivity
+- **Offline-capable batch scoring**, runs weekly via Airflow even without live DHIS2 connectivity
 
 ---
 
@@ -77,7 +77,7 @@ A three-layer AI pipeline:
 - Antibiotics (Amoxicillin, Co-trimoxazole, Metronidazole)
 - Vaccines (OPV, BCG, Pentavalent)
 - Family planning (Depo-Provera, Implants)
-- Essential diagnostics (Rapid Diagnostic Tests — malaria, HIV)
+- Essential diagnostics (Rapid Diagnostic Tests, malaria, HIV)
 
 ---
 
@@ -219,7 +219,7 @@ cp .env.example .env
 
 ## Impact Potential
 
-- **30,000+** PHCs in Nigeria — each with 40–60 essential drug lines
+- **30,000+** PHCs in Nigeria, each with 40–60 essential drug lines
 - **10%** of maternal deaths linked to oxytocin stockouts (WHO estimate)
 - **$2.4M** estimated annual savings in emergency procurement costs per state
 - **45-day lead time** gives procurement teams 6 weeks to source and deliver
@@ -236,4 +236,4 @@ Geospatial AI Engineer & Data Scientist
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License, see [LICENSE](LICENSE) for details.
